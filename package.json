@@ -1,0 +1,16 @@
+{
+  "name": "pro-trading-journal-landing",
+  "version": "1.0.0",
+  "description": "Official Landing Page for Pro Trading Journal",
+  "author": "Adel",
+  "license": "UNLICENSED", 
+  "private": false,
+  "scripts": {
+    "start": "npx serve .",
+    "deploy:worker": "wrangler deploy src/worker.js",
+    "dev:worker": "wrangler dev src/worker.js"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

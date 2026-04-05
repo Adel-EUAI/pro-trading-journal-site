@@ -1,0 +1,413 @@
+:root {
+    --bg: #6eb37e;
+    --card-bg: linear-gradient(180deg, #110135, #0a0121);
+    --accent: #38bdf8;
+    --text-main: #f3f4f6;
+    --text-muted: #9ca3af;
+    --border: rgba(56, 189, 248, 0.2);
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* HEADER */
+.main-header {
+    padding: 40px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*max-width: 1200px;
+    margin: 0 auto;*/
+    width: 100%;
+    padding: 50px;
+}
+
+.gradient-text {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+    background: linear-gradient(135deg, #122b1d, #518d6f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    width: 95%; 
+    /*color: var(--text-muted);*/
+    Color: #284747;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 5px 0 0 40px;
+    text-align: justify;
+}
+
+.app-logo {
+    height: 60px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+
+/* HERO SECTION */
+.hero-section {
+    /*padding: 0 24px;
+    max-width: 1200px;
+    margin: 0 auto;*/
+    width: 100%;
+    padding: 0px 50px 0px 50px;
+}
+
+.hero-container {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+.main-cover {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+/* تنظیم نسبت عرض پنل‌ها */
+.panel-grid-container {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    padding: 20px 50px; /* پدینگ را کمی کمتر کردیم تا فضا بازتر شود */
+    align-items: stretch; /* هم‌تراز کردن ارتفاع هر دو باکس */
+}
+
+/* باکس پیش‌نمایش (بزرگتر) */
+.panel-grid-container .panel-box:first-child {
+    flex: 2.5; /* فضای بسیار بیشتری به عکس‌ها می‌دهد */
+}
+
+/* باکس قابلیت‌ها (کوچکتر و زیر هم) */
+.panel-grid-container .panel-box:last-child {
+    flex: 1;
+    min-width: 300px; /* جلوگیری از بیش از حد باریک شدن */
+}
+
+
+.panel-box {
+    flex: 1;
+    /*background: var(--card-bg);*/
+    background: #4d6151;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.panel-box.flex-column {
+    justify-content: space-between; /* پخش کردن محتوا برای چسباندن دکمه به پایین */
+}
+
+.panel-box .cta-wrapper {
+    margin: 20px 0 0 0; /* حذف مارجین‌های بزرگ قبلی */
+}
+
+
+
+.panel-title {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 25px;
+    background: linear-gradient(135deg, #66c894, #f1fff8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* CAROUSEL */
+
+.carousel {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* استاندارد عریض برای نمایش دشبورد */
+    overflow: hidden;
+    border-radius: 12px;
+    background: #213128;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    /*object-fit: cover; /* یا contain بسته به نوع اسکرین‌شات‌هایت */
+}
+
+.carousel-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #6eb37e;
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.next { right: 0; }
+.prev { left: 0; }
+
+
+.features-grid {
+    display: flex;
+    flex-direction: column; /* چیدمان عمودی */
+    gap: 15px;
+    height: auto;
+}
+
+.feature-card {
+    background: #6eb37e;
+    padding: 20px; /* پدینگ بیشتر برای خوانایی */
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.05);
+    display: flex;
+    align-items: center; /* آیکون و متن در یک خط */
+    gap: 15px;
+}
+
+.feature-icon { 
+    font-size: 1.8rem; 
+    margin-bottom: 0; /* حذف فاصله پایینی قدیمی */
+}
+
+.feature-card h3 { 
+    font-size: 1rem; 
+    margin: 0;
+    color: #24322a; 
+}
+
+.feature-card p { 
+    font-size: 0.85rem; 
+    margin: 5px 0 0 0; 
+    color: #444444;
+    font-weight: 800; 
+}
+
+/* CTA BUTTON */
+.cta-wrapper { text-align: center; margin: 60px 0; }
+
+.primary-btn {
+    text-decoration: none;
+    padding: 18px 40px;
+    background: linear-gradient(135deg, #232d24, #618f64);
+    color: white;
+    font-weight: 800;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.pulse { animation: pulse-shadow 2s infinite; }
+
+@keyframes pulse-shadow {
+    0% { box-shadow: 0 0 0 0 rgba(86, 255, 196, 0.4); }
+    70% { box-shadow: 0 0 0 20px rgba(56,189,248,0); }
+    100% { box-shadow: 0 0 0 0 rgba(56,189,248,0); }
+}
+
+/*========================= CONTACT ============================*/
+
+.contact-section {
+  padding: 10px 10px;
+  background: linear-gradient(135deg, #262c27, #495b4d);
+  width: 95%;
+  /*margin: 40px auto; /* ایجاد فاصله با بالا و متمرکز کردن */
+  margin: 30px auto;
+  border-radius: 20px; /* برای اینکه لبه‌ها با پنل‌های بالا هماهنگ شود */
+        
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #a1e3ff, #6366f1);
+  opacity: 0.6;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.contact-header {
+  margin-bottom: 30px;
+}
+
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  display: inline-block;
+  background: linear-gradient(135deg, #66c894, #f1fff8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-text {
+  font-size: 1rem;
+  background: linear-gradient(135deg,  #78b092, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #b7c0ff;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/*=================================== CONTACT CARDS ================================*/
+
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 28px;
+  min-width: 260px;
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(130,150,255,0.4);
+}
+
+.contact-label {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #66c894;
+  margin-bottom: 6px;
+}
+
+.contact-value {
+  font-size: 1rem;
+  color: #f2fff6;
+  font-weight: 500;
+}
+
+/*================================== FOOTER ========================================*/
+.footer {
+  background: #0a0c10;
+  padding: 40px 20px 25px;
+  font-size: 14px;
+  color: #8b8f98;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-built {
+  color: #284747;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 40px;
+  width: 40px;
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.4));
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.footer-logo:hover {
+  transform: scale(1.05);
+}
+
+.footer-legal {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer-legal a {
+  color: #284747;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: 0.3s ease;
+}
+
+.footer-legal a:hover {
+  color: #ffffff;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;   /* این مهم‌ترین خطه */
+  gap: 10px;
+}
+
+.footer-right:hover .footer-logo {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+.footer-separator {
+color: #787878;
+}
+/*=============================== TRADE MARK ================================*/
+
+.tm-mark {
+    position: relative;
+    top: -15px;         /* کمی بالاتر از لبه لوگو */
+    right: 8px;      /* چسبیده به لبه سمت راست لوگو */
+    font-size: 20px;   /* سایز ظریف */
+    font-weight: normal;
+    color: #284747;    /* رنگ آبی درخشان لایسنس */
+    opacity: 1;      /* کمی شفافیت برای شیک‌تر شدن */
+}

@@ -1,41 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pro Trading Journal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pro Trading Journal | Web App</title>
+    
+    <meta property="og:title" content="Pro Trading Journal | Web App">
+    <meta property="og:description" content="A privacy-first trading journal with Performance Intelligence and Edge Computing analytics.">
+    <meta property="og:image" content="https://adel-euai.github.io/pro-trading-journal-web-app/asset/og-image.png">
+    <meta property="og:url" content="https://adel-euai.github.io/pro-trading-journal-web-app/">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="hero">
-    <img class="cover" src="images/cover.jpg" alt="Pro Trading Journal Cover">
-    <h1>Pro Trading Journal</h1>
-    <p class="tagline">Privacy-first performance analytics for serious traders.</p>
-    <a class="cta-button" href="https://YOUR-REAL-APP-LINK.com" target="_blank">Open Web App</a>
-  </header>
+    <header class="main-header">
+        <div class="header-content">
+            <h1 class="gradient-text">Pro Trading Journal</h1>
+            <p class="subtitle">Pro Trading Journal is a privacy-first Web App designed for professional traders to track and optimize their performance through data-driven insights.</p>
+        </div>
+        <img src="asset/adel-logo.jpg" alt="Adel Logo" class="app-logo">
+    </header>
 
-  <section class="screenshots">
-    <h2>Screenshots</h2>
-    <img src="images/screenshot1.jpg" alt="Dashboard Screenshot">
-    <img src="images/screenshot2.jpg" alt="Analytics Screenshot">
-  </section>
+    <section class="hero-section">
+        <div class="hero-container">
+            <img src="asset/app-cover.png" alt="Pro Trading Journal Dashboard" class="main-cover">
+        </div>
+    </section>
 
-  <section class="features">
-    <h2>Features</h2>
-    <ul>
-      <li>🔹 Local-First Privacy — Your trading data stays on your device.</li>
-      <li>🔹 Edge-Powered Analytics — Built on Cloudflare Workers.</li>
-      <li>🔹 Performance Intelligence — Minimal, fast UI.</li>
-      <li>🔹 Secure by Design — Licensing & SHA-256 protection.</li>
-    </ul>
-  </section>
+    <section class="panel-grid-container">
+        
+        <div class="panel-box flex-column">
+            <h2 class="panel-title">PREVIEW</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="asset/screenshot1.png" alt="Screen 1">
+                    <img src="asset/screenshot2.png" alt="Screen 2">
+                    <img src="asset/screenshot3.png" alt="Screen 3">
+                    <img src="asset/screenshot4.png" alt="Screen 4">
+                    <img src="asset/screenshot5.png" alt="Screen 5">
+                </div>
+                <button class="nav-btn prev">&#10094;</button>
+                <button class="nav-btn next">&#10095;</button>
+            </div>
+        </div>
 
-  <footer>
-    <p>
-      <a href="privacy.html">Privacy Policy</a> | 
-      <a href="terms.html">Terms of Service</a>
-    </p>
-  </footer>
+        <div class="panel-box flex-column">
+            <h2 class="panel-title">CAPABILITIES</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Local-First</h3>
+                    <p>Your trading data stays on your device. Zero server-side leaks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Edge Computing</h3>
+                    <p>Cloudflare Workers for ultra-fast analytical processing.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3>Secure Logic</h3>
+                    <p>Licensing system backed by SHA-256 and D1 SQL infrastructure.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Intelligence</h3>
+                    <p>Minimalist UI built with Vanilla JS for high-speed execution.</p>
+                </div>
+            </div>
+            <div class="cta-wrapper">
+                <a href="https://pro-trading-journal-7cz.pages.dev" target="_blank" class="primary-btn pulse">
+                    Open Web App
+                </a>
+            </div> 
+        </div>   
+    </section>
+
+
+
+    <!--============================= CONTACT ======================================-->
+  <section class="contact-section">
+
+  <div class="contact-container">
+
+    <div class="contact-header">
+      <h2 class="contact-title">LET’S CONNECT</h2>
+      <p class="contact-text">
+        For partnerships, licensing inquiries, or collaboration opportunities,
+        feel free to reach out.
+      </p>
+    </div>
+
+    <div class="contact-methods">
+
+      <a href="mailto:adel.euai@gmail.com" class="contact-card">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">adel.euai@gmail.com</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/adel-euai" target="_blank" class="contact-card">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">View Profile</span>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+    <div class="footer-container">
+
+    <div class="footer-left">
+      <span class="footer-built">© 2026 Pro Trading Journal</span>
+      <span class="footer-separator">|</span>
+      <span class="footer-built">All rights reserved</span>
+    </div>
+
+    <div class="footer-right">
+      <span class="footer-built">Built by Adel</span>
+      <img src="asset/adel-logo.jpg" alt="Adel Logo" class="footer-logo">
+      <span class="tm-mark">™</span>
+    </div>
+  </div>
+
+  <div class="footer-legal">
+    <a href="./privacy.html">Privacy Policy</a>
+    <span class="footer-separator">•</span>
+    <a href="./terms.html">Terms of Service</a>
+  </div>
+
+    
+
+    <script src="script.js"></script>
 </body>
 </html>

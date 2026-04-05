@@ -1,0 +1,108 @@
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #001faa, #001e4f);
+      /*background-color: #0a0c10;*/
+      color: #cccccc;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #80d0ff;
+    }
+
+    main {
+      max-width: 950px;
+      margin: 50px auto;
+      padding: 20px 30px;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      text-align: center;
+      color: #6dcaff;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      color: #96e8ff;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #6cd0ff;
+      padding-bottom: 6px;
+    }
+
+    section {
+      background-color: #000644;
+      padding: 20px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(145, 145, 145, 0.5);
+      margin-bottom: 25px;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    ul {
+      list-style: disc inside;
+      margin-bottom: 15px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .last-updated {
+      font-size: 0.9rem;
+      color: #e0e0e0;
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    strong {
+      color: #e0e0e0;
+    }
+
+    .header-row {
+      display: flex;
+      justify-content: space-between; /* فاصله بین آیتم ها */
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .back-link {
+      font-weight: 600;
+      color: #cccccc;
+      text-decoration: none;
+      transition: color 0.2s, transform 0.2s;
+      margin: 0;
+    }
+
+    .back-link:hover {
+      color: #ffffff; /* وقتی موس روش میره رنگ عوض میشه */
+      transform: translateX(-3px); /* کمی حرکت به چپ */
+    }
+
+    .last-updated {
+      font-weight: 600;
+      color: #cccccc;
+      margin: 0;
+    }
