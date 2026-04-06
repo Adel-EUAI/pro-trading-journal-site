@@ -360,7 +360,7 @@ body {
   line-height: 1;
   display: flex;
   align-items: center;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .footer-logo {
@@ -379,7 +379,7 @@ body {
 .footer-legal {
   margin-bottom: 20px;
   text-align: center;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .footer-legal a {
