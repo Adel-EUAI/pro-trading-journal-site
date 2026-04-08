@@ -1,6 +1,6 @@
-# 🚀 Pro Trading Journal | Official Website
+# 🚀 Adel | Pro Trading Journal | Official Website
 
-This repository hosts the official landing page and legal infrastructure for **Pro Trading Journal** — a privacy-first analytics platform designed for professional traders.
+This repository hosts the official landing page and legal infrastructure for **Adel | Pro Trading Journal** — a privacy-first analytics platform designed for professional traders.
 
 ---
 
@@ -12,7 +12,7 @@ This repository hosts the official landing page and legal infrastructure for **P
 
 ## 🛡️ Core Philosophy: Privacy-First Analytics
 
-Unlike traditional journals, Pro Trading Journal is built on a **Zero-Knowledge Architecture**:
+Unlike traditional journals, Adel | Pro Trading Journal is built on a **Zero-Knowledge Architecture**:
 
 - **🛡️ Local-First Data:** Your trading logs and strategies never leave your device. All data is stored in your browser's local storage.
 - **⚡ Edge Computing:** Analytics are processed via **Cloudflare Workers**, ensuring high-speed performance without data logging.
@@ -43,7 +43,7 @@ pro-trading-journal-web-app/
 
 - **License Info:** See the LICENSE file for full licensing terms and information.
 - **Search Engine Optimized:** Metadata and Open Graph tags are integrated for professional social sharing and visibility.
-- **Legal Source of Truth:** This repository serves as the primary host for all legal documentation and compliance standards related to the Pro Trading Journal ecosystem.
+- **Legal Source of Truth:** This repository serves as the primary host for all legal documentation and compliance standards related to the Adel | Pro Trading Journal ecosystem.
 
 ---
 
@@ -55,4 +55,4 @@ pro-trading-journal-web-app/
 ---
 
 *Built for traders who take their data seriously.*
-*Copyright © 2026 - Pro Trading Journal Website | All Rights Reserved*
+*Copyright © 2026 - Adel | Pro Trading Journal Website | All Rights Reserved*
