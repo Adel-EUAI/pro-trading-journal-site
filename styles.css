@@ -51,10 +51,15 @@ body {
 }
 
 .app-logo {
-    height: 60px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
-    margin-left: 20px;
+  height: 60px;
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.6));
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  margin-left: 20px;
+}
+
+.app-logo:hover {
+  transform: scale(1.1);
 }
 
 /* HERO SECTION */
