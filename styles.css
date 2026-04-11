@@ -22,7 +22,7 @@ body {
     padding: 40px 24px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
     /*max-width: 1200px;
     margin: 0 auto;*/
     width: 100%;
@@ -39,14 +39,25 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+/*
 .subtitle {
     width: 95%; 
-    /*color: var(--text-muted);*/
     Color: #284747;
     font-weight: 600;
     letter-spacing: 2px;
     margin: 5px 0 0 40px;
+    text-align: justify;
+}
+*/
+
+.subtitle {
+    width: 100%; 
+    /*color: var(--text-muted);*/
+    Color: #284747;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 15px 0 0 60px;
     text-align: justify;
 }
 
@@ -56,6 +67,7 @@ body {
   border-radius: 12px;
   transition: transform 0.3s ease;
   margin-left: 20px;
+  margin-top: 10px;
 }
 
 .app-logo:hover {
@@ -425,3 +437,20 @@ color: #434343;
 }
 
 
+/*------------------------------------------NAVI--------------------------------------------*/
+.nav-links {
+  margin: 15px 0px 0px 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color:  #284747;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
