@@ -48,9 +48,19 @@ pro-trading-journal-web-app/
 ---
 
 ## 👤 Author
-**Adel** — *Process Engineer (MSc) & Full-stack Developer*
-- **LinkedIn:** [https://www.linkedin.com/in/adel-euai](https://www.linkedin.com/in/adel-euai)
-- **Contact:** [adel.euai@gmail.com](mailto:adel.euai@gmail.com)
+
+**Adel** *Process Engineer (MSc) | Full-stack Developer* 
+For licensing inquiries, technical support, or professional collaboration:
+
+### 📞 Contact & Socials
+- **Email:** [adel.euai@gmail.com](mailto:adel.euai@gmail.com)
+- **LinkedIn:** [linkedin.com/in/adel-euai](https://www.linkedin.com/in/adel-euai)
+- **GitHub:** [@Adel-EUAI](https://github.com/Adel-EUAI)
+- **Personal Website:** [adel-euai.github.io](https://adel-euai.github.io)
+
+### 🔗 Project Links
+- **Live Web App:** [adel-pro-trading-journal.pages.dev](https://adel-pro-trading-journal.pages.dev)
+- **Website:** [adel-euai.github.io/pro-trading-journal](https://adel-euai.github.io/pro-trading-journal)
 
 ---
 
